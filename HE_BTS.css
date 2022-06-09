@@ -1,0 +1,164 @@
+*{margin: 0; padding:0 ;} /* quitamos margenes */
+.wrapper{
+    display:block; 
+    position:relative; 
+    width:100%; 
+    margin:0; 
+    padding:0; 
+    text-align:left; 
+    word-wrap:break-word;
+}
+
+.hoc{
+    display:block; 
+    margin:0 auto;
+}
+
+.header2{
+    background: purple;
+}
+.logo{
+    font-size: 40pt;
+    color: thistle;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-style: italic;
+    line-height: 200px;
+}
+.header2 nav{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.header2 nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a:hover{
+    color: indigo;
+}
+.header2 nav ul li ul{
+    display: flex;
+    flex-direction: column;
+}
+.header2 nav ul li ul{
+    position: absolute;
+    background: purple;
+}
+.header2 nav ul li ul li{
+    width: 200px;
+    position: relative;
+}
+.header2 nav ul li ul{
+    display: none;
+}
+.header2 nav ul li:hover >ul{
+    display: block;
+    visibility: visible; 
+    opacity:1;
+}
+
+
+hr{
+    border-color: black;
+    color: black;
+}
+
+
+.d-flex .btn{
+    border-color: purple;
+    color: white;
+}
+.d-flex .btn:hover{
+    background-color: purple;
+}
+
+#carouselExampleIndicators3{
+    width: auto;   /* ancho */
+    height: 8cm;  /* altura */
+}
+#carouselExampleIndicators9{
+    width: auto;   /* ancho */
+    height: 8cm;  /* altura */
+}
+#carouselExampleIndicators10{
+    width: auto;   /* ancho */
+    height: 8cm;  /* altura */
+}
+#carouselExampleIndicators11{
+    width: auto;   /* ancho */
+    height: 8cm;  /* altura */
+}
+.carousel-inner img {
+    width: 6cm;   /* ancho */
+    height: auto;  /* altura */
+    object-fit: cover;
+}
+
+.card{
+    width: 6cm;
+    height: auto;
+    margin-bottom: 30px;
+}
+.card img{
+    width: auto;
+    height: 8cm;
+}
+.card title{
+    font-size: 5cm;
+}
+h5{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 11pt;
+}
+
+
+
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 20pt;
+
+}
+hr{
+    height: 3px;
+    margin-right: 60px;
+    margin-left: 60px;
+    background-color: black;
+}
+
+
+footer .hr{
+    height: 3px;
+    margin-right: 60px;
+    margin-left: 60px;
+    background-color: black;
+}
+
+
+
+.container{
+    padding: 80px 0;
+}
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1140px){
+	.hoc{max-width:1140px;}
+}
+
+@media screen and (min-width:978px) and (max-width:1140px){
+	.hoc{max-width:95%;}
+}
